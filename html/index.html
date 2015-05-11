@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="-utf-8">
+		<title>hello.february</title>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic|Cutive+Mono|Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="../css/main.css">
+		<link rel='stylesheet' href="../css/responsive.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="../js/jquery-1.9.1.min.js"></script>
+		<script src="../js/modernizr.js"></script>
+		<script src="../js/scroll.js"></script>
+		<script>
+		    $(document).ready(function(){
+		        if (Modernizr.touch) {
+		            // show the close overlay button
+		            $(".close-overlay").removeClass("hidden");
+		            // handle the adding of hover class when clicked
+		            $(".img").click(function(e){
+		                if (!$(this).hasClass("hover")) {
+		                    $(this).addClass("hover");
+		                }
+		            });
+		            // handle the closing of the overlay
+		            $(".close-overlay").click(function(e){
+		                e.preventDefault();
+		                e.stopPropagation();
+		                if ($(this).closest(".img").hasClass("hover")) {
+		                    $(this).closest(".img").removeClass("hover");
+		                }
+		            });
+		        } else {
+		            // handle the mouseenter functionality
+		            $(".img").mouseenter(function(){
+		                $(this).addClass("hover");
+		            })
+		            // handle the mouseleave functionality
+		            .mouseleave(function(){
+		                $(this).removeClass("hover");
+		            });
+		        }
+		    });
+		</script>
+
+	</head>
+
+	<body>
+
+		<header>
+
+			<div id="side-nav">
+				<nav>
+					<ul>
+						<h3>navigation_</h3>
+						<a href="#"><li class="hvr-underline-from-left">HELLO</li></a>
+						<a href="#about"><li class="hvr-underline-from-left">ABOUT ME</li></a>
+						<a href="#portfolio"><li class="hvr-underline-from-left">MY WORK</li></a>
+						<a href="#shout-outs"><li class="hvr-underline-from-left">SHOUT-OUTS</li></a>
+						<a href="#contact"><li class="hvr-underline-from-left">FIND ME</li></a>
+						<a href="#"><li class="hvr-underline-from-left">MORE INFO</li></a>
+					</ul>
+				</nav>
+			</div>
+
+			<div id="header-side">
+
+				<div class="header-content">
+
+					<div class="container">
+
+							<nav id="menu">
+
+
+
+
+				    		<input type="checkbox" id="toggle-nav"/>
+				    		<label id="toggle-nav-label" for="toggle-nav"></label>
+
+				    		<div class="box">
+								<div id="navigation">
+									<p>navigation_</p>
+								</div >
+									<ul>
+										<a href="#"><li class="hvr-underline-from-left">HELLO</li></a>
+										<a href="#about"><li class="hvr-underline-from-left">ABOUT ME</li></a>
+										<a href="#portfolio"><li class="hvr-underline-from-left">MY WORK</li></a>
+										<a href="#shout-outs"><li class="hvr-underline-from-left">SHOUT-OUTS</li></a>
+										<a href="#contact"><li class="hvr-underline-from-left">FIND ME</li></a>
+										<a href="#"><li class="hvr-underline-from-left">MORE INFO</li></a>
+									</ul>
+				    		</div>
+
+				    	</nav>
+
+					</div>
+					<div id="top">
+						<h1>hello.february_</h1>
+					</div>
+
+
+
+				</div>
+
+			</div>
+		</header>
+
+		<section>
+
+			<div id="about">
+				<h2>about.me_</h2>
+
+				<img src="../images/photo.jpg" alt="profile-photo" class="profile-photo" >
+
+				<p>
+					<span class="highlight">HELLO WORLD!!!</span><br><br>I am <span class="highlight">DYLONSMITH</span>,
+					a computing student with a passion for web design & development.
+					When I am not learning to master the web, I am usually some where off thinking about random stuff, laughing or learning something new.
+				</p>
+
+			</div>
+
+			<div id="portfolio">
+				<h2>my.work_</h2>
+
+				<div id="effect-2" class="effects clearfix">
+		            <div class="img">
+		                <img src="../images/gallery-1.jpg" alt="">
+		                <div class="overlay">
+							<a href="#" class="expand">
+								<P>DYLON SMITH LOGO</P>
+								<img src="../images/more-icon.png">
+							</a>
+
+		                    <a class="close-overlay hidden"><img src="../images/close-icon-w.png"></a>
+		                </div>
+		            </div>
+		            <div class="img">
+		                <img src="../images/2.jpg" alt="">
+		                <div class="overlay">
+							<a href="#" class="expand">
+								<P>hello.february WEBSITE</P>
+								<img src="../images/more-icon.png">
+							</a>
+							<a class="close-overlay hidden"><img src="../images/close-icon-w.png"></a>
+		                </div>
+		            </div>
+		            <div class="img">
+		                <img src="../images/3.jpg" alt="">
+		                <div class="overlay">
+							<a href="#" class="expand">
+								<P>1021 WEBSITE</P>
+								<img src="../images/more-icon.png">
+							</a>
+							<a class="close-overlay hidden"><img src="../images/close-icon-w.png"></a>
+		                </div>
+		            </div>
+		            <div class="img">
+		                <img src="../images/4.jpg" alt="">
+		                <div class="overlay">
+							<a href="#" class="expand">
+								<P>COMMING SOON</P>
+								<img src="../images/more-icon.png">
+							</a>
+							<a class="close-overlay hidden"><img src="../images/close-icon-w.png"></a>
+		                </div>
+		            </div>
+					<div class="img">
+		                <img src="../images/3.jpg" alt="">
+		                <div class="overlay">
+							<a href="#" class="expand">
+								<P>COMMING SOON</P>
+								<img src="../images/more-icon.png">
+							</a>
+							<a class="close-overlay hidden"><img src="../images/close-icon-w.png"></a>
+		                </div>
+		            </div>
+					<div class="img">
+		                <img src="../images/1.jpg" alt="">
+		                <div class="overlay">
+							<a href="#" class="expand">
+								<P>COMMING SOON</P>
+								<img src="../images/more-icon.png">
+							</a>
+							<a class="close-overlay hidden"><img src="../images/close-icon-w.png"></a>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+
+			<div id="shout-outs">
+
+					<h2>shout.outs_</h2>
+					<ul>
+						<li>
+
+							<div class="qoutes-container">
+
+								<img src="../images/dylon.jpg" alt="profile-photo" class="user-profile-photo" >
+								<h4>JOHN DOE</h4>
+								<h6>SENIOR VICE PRESIDENT</h6>
+								<h6>AWESOME INDUSTRIES </h6>
+								<p>
+									Dolore qui laboris cillum fugiat velit labore id non.
+									Dolor dolore ad quis aliqua amet.
+									Quis est fugiat labore ad commodo tempor pariatur ut mollit occaecat ut irure incididunt ea.
+									Qui tempor culpa commodo exercitation.
+								</p>
+
+							</div>
+
+						</li>
+						<li>
+
+							<div class="qoutes-container">
+
+								<img src="../images/dylon.jpg" alt="profile-photo" class="user-profile-photo" >
+								<h4>JANE DOE</h4>
+								<h6>VICE PRESIDENT</h6>
+								<h6>AWESOME INDUSTRIES </h6>
+								<p>
+									Eu aliquip sint labore ad culpa duis magna.
+									Tempor incididunt ex dolor dolor mollit proident.
+									Aute officia velit id excepteur incididunt minim nulla ea tempor laboris nulla eiusmod velit laborum.
+									Voluptate ipsum elit id pariatur irure.
+								</p>
+
+							</div>
+
+						</li>
+						<li>
+
+							<div class="qoutes-container">
+
+								<img src="../images/dylon.jpg" alt="profile-photo" class="user-profile-photo" >
+								<h4>JANET DOE</h4>
+								<h6>VICE PRESIDENT</h6>
+								<h6>AWESOME INDUSTRIES </h6>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+									Pellentesque facilisis sapien nisl, eget rhoncus orci vehicula at.
+									Ut id enim quis metus facilisis rutrum vitae eu orci.
+									Morbi condimentum gravida eros efficitur consectetur.
+								</p>
+
+							</div>
+
+						</li>
+					</ul>
+
+			</div>
+
+			<div id="contact">
+
+				<p>
+					SO! How do you find me?
+				</p>
+
+				<ul class="social">
+					<a href="https://plus.google.com/u/0/+DylonDAGSSmith/about"><li><img src="../images/g+.png" alt="google+-icon"></li></a>
+					<a href="https://twitter.com/DAGS_170291"><li><img src="../images/twitter.png" alt="twitter-icon"></li></a>
+					<a href="https://www.pinterest.com/dags170291/"><li><img src="../images/pinterest.png" alt="pinterest-icon"></li></a>
+					<a href="https://instagram.com/dags_170291/" ><li><img src="../images/instagram.png" alt="instagram-icon"></li></a>
+					<a href="https://behance.net/dags170291"><li><img src="../images/behance.png" alt="behance-icon"></li></a>
+					<a href="https://github.com/dags170291"><li><img src="../images/github.png" alt="github-icon"></li></li></a>
+				</ul>
+
+				<h3>OR E-MAIL ME<br>@</h3>
+
+				<li class="mail"><a href="mailto:dags170291@gmail.com" class="hvr-underline-reveal">dags170291@gmail.com</a></li>
+
+			</div>
+
+		</section>
+
+		<footer>
+			<!-- <p>&copy; 2015 Dylon Smith</p> -->
+		</footer>
+
+	</body>
+
+</html>
