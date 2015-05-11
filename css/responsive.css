@@ -191,7 +191,7 @@
 	#toggle-nav:checked ~ #toggle-nav-label {
 		color: #000;
 		background: #fff;
-		background-image: url("images/close-icon.png");
+		background-image: url("../images/close-icon.png");
 		background-repeat: no-repeat;
 		background-size: 30px;
 		background-position: left center;
@@ -224,7 +224,7 @@
 		text-align:right;
 		position: fixed;
 	  	background: #fff;
-		background-image: url("images/menu-icon.png");
+		background-image: url("../images/menu-icon.png");
 		background-repeat: no-repeat;
 		background-size: 30px;
 		background-position: left center;
