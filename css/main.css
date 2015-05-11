@@ -106,7 +106,7 @@ HEADER CONTENT
 }
 
 .header-content{
-	background-image: url("../images/fox.jpg");
+	background-image: url("images/fox.jpg");
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -150,7 +150,7 @@ SECTION: ABOUT
 	width: 95%;
 	text-align: center;
 	height: 100vh;
-	background-image: url("../images/logo3.png");
+	background-image: url("images/logo3.png");
 	background-repeat:no-repeat;
 	background-size: 512px 512px;
 	background-position: center center;
@@ -295,7 +295,7 @@ SECTION: SHOUT-OUTS
 }
 
 #shout-outs p{
-	background-image: url("../images/quote.png"),url("../images/quote-reverse.png");
+	background-image: url("images/quote.png"),url("images/quote-reverse.png");
 	background-position: top left, bottom right;
 	font-size: 1em;
 	width: 75%;
