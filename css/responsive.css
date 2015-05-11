@@ -1,4 +1,6 @@
-@media screen and (max-width: 1024px){
+@media only screen
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2) {
 	/*For Tablet Displays*/
 
 	/**********************************************************
@@ -63,9 +65,10 @@
 	}
 	#top{
 		position: fixed;
-		box-shadow: 0 0px 5px #282828;
+		/*box-shadow: 0 0px 5px #282828;*/
 		height: 50px;
 		z-index: 1900;
+		opacity: 0.95;
 	}
 	#top h1{
 		text-align: right;
