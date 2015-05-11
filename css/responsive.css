@@ -450,13 +450,13 @@
 
 	.overlay a p{
 		font-family: 'cutive mono', monospace;
-		letter-spacing: 2px;
-		font-size: 1em;
-		width: 70%;
+		letter-spacing: 1px;
+		font-size: 0.75em;
+
 
 	}
 	#effect-2 .overlay a.expand {
-	  	top: 30%;
+	  	top: 40%;
 
 	}
 }
