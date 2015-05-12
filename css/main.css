@@ -304,7 +304,7 @@ SECTION: SHOUT-OUTS
 	line-height:20px;
 	background-size:50px 50px;
 	padding: 20px 20px;
-	color:#ECECEC;
+	color:#282828;
 	font-style: italic;
 }
 
@@ -325,7 +325,8 @@ SECTION: SHOUT-OUTS
 
 .qoutes-container{
 	display:inline-block;
-	background-color:#282828;
+	/*background-color:#282828;*/
+	border: #282828 solid 2px;
 	float: left;
 	padding: 60px 25px 25px;
 	height: 600px;
