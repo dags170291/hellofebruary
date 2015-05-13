@@ -11,6 +11,11 @@ a:hover, a:active, a:focus {
   outline: 0;
 }
 
+ul{
+margin: 0;
+padding: 0;
+}
+
 header{
 	height: 100vh;
 }
@@ -25,7 +30,7 @@ h2{
 	font-family:'Montserrat', sans-serif;
 	color:#E42829;
 	width: 100%;
-	margin: 10px auto;
+	margin: 0 auto;
 	background:#fff;
 	padding: 20px 0;
 	text-align: center;
@@ -36,10 +41,11 @@ h2{
 }
 
 .highlight{
-	font-family:'Cutive Mono',monospace;
-	font-size: 1.25em;
-	font-weight: 700;
-	letter-spacing: 5px;
+	/*font-family:'Cutive Mono',monospace;*/
+	/*letter-spacing: 5px;*/
+	color: #e74c3c;
+	font-style: normal;
+	font-weight: bold;
 }
 
 
@@ -149,7 +155,7 @@ SECTION: ABOUT
 	padding: 10px 0;
 	width: 95%;
 	text-align: center;
-	height: 100vh;
+	height: 100%;
 	background-image: url("../images/logo3.png");
 	background-repeat:no-repeat;
 	background-size: 512px 512px;
@@ -166,11 +172,13 @@ SECTION: ABOUT
 #about p {
 	justify-content: justify;
 	margin: 20px auto 30px;
-	font-size: 1.75em;
-	line-height: 40px;
-	color: #323232;
-	width: 50%;
+	font-size: 1.25em;
+	line-height: 30px;
+	color: #282828;
+	width: 70%;
 	background-size: 50px 100px;
+	font-family: 'Source Sans Pro', sans-serif;
+	/*font-style: italic;*/
 }
 
 
@@ -179,7 +187,7 @@ SECTION: ABOUT
 SECTION: MY WORK/PORTFOLIO
 ============================================================ */
 #portfolio{
-	margin: 50px auto;
+	margin: 50px auto 0;
 	width: 95%;
 	text-align: center;
 	background: #282828;
@@ -271,67 +279,53 @@ a.expand {
 SECTION: SHOUT-OUTS
 ============================================================ */
 #shout-outs{
-	margin: 30px auto 0;
-	padding-bottom: 20px;
+	margin: 0 auto ;
+	/*padding-bottom: 20px;*/
 	max-width: 95%;
 	text-align: center;
-	height: 100vh;
+	height: 100%;
 	overflow: hidden;
 }
 
-#shout-outs ul{
-	margin: auto;
-	padding: 0px;
-	width: 95%;
-	display: flex;
-	flex-direction: row;
-}
 
 .user-profile-photo{
 	display:inline-block;
-	max-width: 100px;
-	margin: 30px;
+	/*float: right;*/
+	max-width: 125px;
+	margin: 10px;
 	border-radius: 100px;
+	border:rgba(40, 40, 40,0.1) solid 15px;
 }
 
 #shout-outs p{
-	background-image: url("../images/quote.png"),url("../images/quote-reverse.png");
-	background-position: top left, bottom right;
+	background-image: url("../images/quote.png"), url("../images/quote-reverse.png");
+	background-position: top left,  bottom right;
 	font-size: 1em;
 	width: 75%;
-	margin: 20px auto;
+	margin: 0 auto 20px;
 	background-repeat:no-repeat;
 	line-height:20px;
-	background-size:50px 50px;
-	padding: 20px 20px;
+	background-size:25px 25px;
+	padding: 5px 40px;
 	color:#282828;
 	font-style: italic;
+	text-align: center;
 }
 
-#shout-outs h4, h6{
-	margin:10px;
-	color: #7f8c8d;
-	font-family: 'Cutive Mono',monospace;
-	letter-spacing: 5px;
+#shout-outs .author ul{
+	display: inline;
+	width: 80%
 }
-
-#shout-outs h4{
-	color:#e74c3c;
-}
-
-#shout-outs ul li{
+#shout-outs .author ul li{
 	list-style: none;
+	margin: 0;
+	color: #282828;
+	text-align: right;
+	width: 90%;
+	font-family:'Cutive Mono', monospace;
+	font-size: 0.85em;
 }
 
-.qoutes-container{
-	display:inline-block;
-	/*background-color:#282828;*/
-	border: #282828 solid 2px;
-	float: left;
-	padding: 60px 25px 25px;
-	height: 600px;
-	margin: 0 5px ;
-}
 
 
 
@@ -349,7 +343,8 @@ SECTION: FIND ME/ CANTACT ME
 #contact p{
 	font-size: 7em;
 	width: 100%;
-	margin:20px auto;
+	margin: 0 auto;
+	padding: 20px;
 	line-height:70px;
 	color:#fff;
 	text-align: center;
@@ -549,4 +544,159 @@ SECTION: ANIMATIONS
 	transition-duration: 0.4s;
 	-webkit-transition-timing-function: ease-out;
 	transition-timing-function: ease-out;
+}
+
+
+
+
+
+
+
+/* Morph Button: Default Styles */
+
+.morph-button {
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.morph-button > button {
+	position: relative;
+	/*padding: 0 1em;*/
+	border: none;
+	background-color: #282828;
+	/*color: #f9f6e5;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	line-height: 80px;*/
+	overflow: hidden;
+}
+.morph-button > button img{
+	width: 40px;
+	height: 10px;
+
+}
+.morph-button.open > button {
+	pointer-events: none;
+}
+
+.morph-content {
+	pointer-events: none;
+}
+
+.morph-button.open .morph-content {
+	pointer-events: auto;
+}
+
+/* Common styles for overlay and modal type (fixed morph) */
+.morph-button-fixed,
+.morph-button-fixed .morph-content {
+	width: 150px;
+	height: 80px;
+}
+
+.morph-button-fixed > button {
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: opacity 0.1s 0.5s;
+	transition: opacity 0.1s 0.5s;
+}
+
+.morph-button-fixed.open > button {
+	opacity: 0;
+	-webkit-transition: opacity 0.1s;
+	transition: opacity 0.1s;
+}
+
+.morph-button-fixed  .morph-content{
+	position: fixed;
+	z-index: 900;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+	transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
+}
+
+.morph-button-fixed.open .morph-content {
+	opacity: 1;
+}
+
+.morph-button-fixed .morph-content > div {
+	visibility: hidden;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.1s, visibility 0s 0.1s, height 0s 0.1s;
+	transition: opacity 0.1s, visibility 0s 0.1s, height 0s 0.1s;
+}
+
+.morph-button-fixed.open .morph-content > div {
+	visibility: visible;
+	height: auto;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s 0.5s;
+	transition: opacity 0.3s 0.5s;
+}
+
+.morph-button-fixed.active > button {
+	z-index: 2000;
+}
+
+.morph-button-fixed.active .morph-content {
+	z-index: 2200;
+}
+
+/* Transitions for overlay button and sidebar button */
+.morph-button-overlay .morph-content,
+.morph-button-sidebar .morph-content {
+	-webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+	transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+}
+
+.morph-button-overlay.open .morph-content,
+.morph-button-sidebar.open .morph-content {
+	-webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+	transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
+}
+
+/* Morph Button Style: Overlay */
+.morph-button.morph-button-overlay {
+	margin: 10px auto;
+}
+
+.morph-button-overlay .morph-content {
+	overflow: auto;
+	background: #e85657;
+}
+
+.morph-button-overlay.open .morph-content {
+	top: 0 !important;
+	left: 0 !important;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+.icon-close img{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	margin: 20px 0 0 43%;
+	position: fixed;
+}
+
+.content-style-overlay {
+	padding: 50px 50px;
+	text-align: center;
+}
+
+.content-style-overlay h2 {
+	margin: 0 0 1em 0;
+	padding: 0;
+	font-weight: 300;
+	font-size: 3em;
+	background: none;
+	color:#fff;
 }

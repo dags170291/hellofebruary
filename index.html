@@ -4,13 +4,19 @@
 		<meta charset="-utf-8">
 		<title>hello.february</title>
 		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic|Cutive+Mono|Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/main.css">
 		<link rel='stylesheet' href="css/responsive.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="js/modernizr.js"></script>
+		<script src="js/modernizr.custom.js"></script>
 		<script src="js/scroll.js"></script>
 		<script src="js/close.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/jquery.flexslider-min.js"></script>
+		<script src="js/main.js"></script> <!-- Resource jQuery -->
+
 		<script>
 		    $(document).ready(function(){
 		        if (Modernizr.touch) {
@@ -53,7 +59,7 @@
 				<nav>
 					<ul>
 						<h3>navigation_</h3>
-						<a href="#"><li class="hvr-underline-from-left">HELLO</li></a>
+						<a href="#"><li class="hvr-underline-from-left">WELCOME</li></a>
 						<a href="#about"><li class="hvr-underline-from-left">ABOUT ME</li></a>
 						<a href="#portfolio"><li class="hvr-underline-from-left">MY WORK</li></a>
 						<a href="#shout-outs"><li class="hvr-underline-from-left">SHOUT-OUTS</li></a>
@@ -79,7 +85,7 @@
 									<p>navigation_</p>
 								</div >
 									<ul class="menu">
-										<a href="#"><li class="hvr-underline-from-left">HELLO</li></a>
+										<a href="#"><li class="hvr-underline-from-left">WELCOME</li></a>
 										<a href="#about"><li class="hvr-underline-from-left">ABOUT ME</li></a>
 										<a href="#portfolio"><li class="hvr-underline-from-left">MY WORK</li></a>
 										<a href="#shout-outs"><li class="hvr-underline-from-left">SHOUT-OUTS</li></a>
@@ -110,7 +116,7 @@
 				<img src="images/photo.jpg" alt="profile-photo" class="profile-photo" >
 
 				<p>
-					<span class="highlight">HELLO WORLD!!!</span><br><br>I am <span class="highlight">DYLONSMITH</span>,
+					<span class="highlight">HELLO WORLD!!!</span><br><br>I am <span class="highlight">Dylon Smith</span>,
 					a computing student with a passion for web design & development.
 					When I am not learning to master the web, I am usually some where off thinking about random stuff, laughing or learning something new.
 				</p>
@@ -120,83 +126,237 @@
 			<div id="portfolio">
 				<h2>my.work_</h2>
 
+
 				<div id="effect-2" class="effects clearfix">
 		            <div class="img">
 		                <img src="images/gallery-1.jpg" alt="">
 		                <div class="overlay">
 							<a href="#" class="expand">
 								<P>DYLON SMITH LOGO</P>
-								<img src="images/more-icon.png">
+								<!-- <img src="images/more-icon.png"> -->
 							</a>
 
 		                    <a class="close-overlay hidden"><img src="images/close-icon-w.png"></a>
+
 		                </div>
+						<div class="morph-button morph-button-overlay morph-button-fixed">
+							<button type="button"><img src="images/more-icon.png"></button>
+							<div class="morph-content">
+								<div>
+										<span class="icon icon-close"><img src="images/close-icon-w.png" alt="close icon"></span>
+									<div class="content-style-overlay">
+										<h2>Dylon</h2>
+										<img src="images/1.jpg">
+										<img src="images/1.jpg">
+										<img src="images/1.jpg">
+
+									</div>
+								</div>
+							</div>
+						</div><!-- morph-button -->
 		            </div>
 		            <div class="img">
 		                <img src="images/2.jpg" alt="">
 		                <div class="overlay">
 							<a href="#" class="expand">
 								<P>hello.february WEBSITE</P>
-								<img src="images/more-icon.png">
+								<!-- <img src="images/more-icon.png"> -->
 							</a>
 							<a class="close-overlay hidden"><img src="images/close-icon-w.png"></a>
+
 		                </div>
+						<div class="morph-button morph-button-overlay morph-button-fixed">
+							<button type="button"><img src="images/more-icon.png"></button>
+							<div class="morph-content">
+								<div>
+										<span class="icon icon-close"><img src="images/close-icon-w.png" alt="close icon"></span>
+									<div class="content-style-overlay">
+										<h2>Dylon</h2>
+										<img src="images/1.jpg">
+										<img src="images/1.jpg">
+										<img src="images/1.jpg">
+
+									</div>
+								</div>
+							</div>
+						</div><!-- morph-button -->
 		            </div>
 		            <div class="img">
 		                <img src="images/3.jpg" alt="">
 		                <div class="overlay">
 							<a href="#" class="expand">
 								<P>1021 WEBSITE</P>
-								<img src="images/more-icon.png">
+								<!-- <img src="images/more-icon.png"> -->
 							</a>
 							<a class="close-overlay hidden"><img src="images/close-icon-w.png"></a>
 		                </div>
+						<div class="morph-button morph-button-overlay morph-button-fixed">
+							<button type="button"><img src="images/more-icon.png"></button>
+							<div class="morph-content">
+								<div>
+										<span class="icon icon-close"><img src="images/close-icon-w.png" alt="close icon"></span>
+									<div class="content-style-overlay">
+										<h2>Dylon</h2>
+										<img src="images/1.jpg">
+										<img src="images/1.jpg">
+										<img src="images/1.jpg">
+
+									</div>
+								</div>
+							</div>
+						</div><!-- morph-button -->
 		            </div>
 		            <div class="img">
 		                <img src="images/4.jpg" alt="">
 		                <div class="overlay">
 							<a href="#" class="expand">
 								<P>COMMING SOON</P>
-								<img src="images/more-icon.png">
+								<!-- <img src="images/more-icon.png"> -->
 							</a>
 							<a class="close-overlay hidden"><img src="images/close-icon-w.png"></a>
 		                </div>
+						<div class="morph-button morph-button-overlay morph-button-fixed">
+							<button type="button"><img src="images/more-icon.png"></button>
+							<div class="morph-content">
+								<div>
+										<span class="icon icon-close"><img src="images/close-icon-w.png" alt="close icon"></span>
+									<div class="content-style-overlay">
+										<h2>Dylon</h2>
+										<img src="images/1.jpg">
+										<img src="images/1.jpg">
+										<img src="images/1.jpg">
+
+									</div>
+								</div>
+							</div>
+						</div><!-- morph-button -->
 		            </div>
 					<div class="img">
 		                <img src="images/3.jpg" alt="">
 		                <div class="overlay">
 							<a href="#" class="expand">
 								<P>COMMING SOON</P>
-								<img src="images/more-icon.png">
+								<!-- <img src="images/more-icon.png"> -->
 							</a>
 							<a class="close-overlay hidden"><img src="images/close-icon-w.png"></a>
 		                </div>
+						<div class="morph-button morph-button-overlay morph-button-fixed">
+							<button type="button"><img src="images/more-icon.png"></button>
+							<div class="morph-content">
+								<div>
+										<span class="icon icon-close"><img src="images/close-icon-w.png" alt="close icon"></span>
+									<div class="content-style-overlay">
+										<h2>Dylon</h2>
+										<img src="images/1.jpg">
+										<img src="images/1.jpg">
+										<img src="images/1.jpg">
+
+									</div>
+								</div>
+							</div>
+						</div><!-- morph-button -->
 		            </div>
 					<div class="img">
 		                <img src="images/1.jpg" alt="">
 		                <div class="overlay">
+
 							<a href="#" class="expand">
 								<P>COMMING SOON</P>
-								<img src="images/more-icon.png">
+								<!-- <img src="images/more-icon.png"> -->
 							</a>
 							<a class="close-overlay hidden"><img src="images/close-icon-w.png"></a>
 		                </div>
+						<div class="morph-button morph-button-overlay morph-button-fixed">
+							<button type="button"><img src="images/more-icon.png"></button>
+							<div class="morph-content">
+								<div>
+										<span class="icon icon-close"><img src="images/close-icon-w.png" alt="close icon"></span>
+									<div class="content-style-overlay">
+										<h2>Dylon</h2>
+										<img src="images/1.jpg">
+										<img src="images/1.jpg">
+										<img src="images/1.jpg">
+
+									</div>
+								</div>
+							</div>
+						</div><!-- morph-button -->
 		            </div>
 		        </div>
+
+				<script src="js/classie.js"></script>
+				<script src="js/uiMorphingButton_fixed.js"></script>
+				<script>
+					(function() {
+						var docElem = window.document.documentElement, didScroll, scrollPosition;
+
+						// trick to prevent scrolling when opening/closing button
+						function noScrollFn() {
+							window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
+						}
+
+						function noScroll() {
+							window.removeEventListener( 'scroll', scrollHandler );
+							window.addEventListener( 'scroll', noScrollFn );
+						}
+
+						function scrollFn() {
+							window.addEventListener( 'scroll', scrollHandler );
+						}
+
+						function canScroll() {
+							window.removeEventListener( 'scroll', noScrollFn );
+							scrollFn();
+						}
+
+						function scrollHandler() {
+							if( !didScroll ) {
+								didScroll = true;
+								setTimeout( function() { scrollPage(); }, 60 );
+							}
+						};
+
+						function scrollPage() {
+							scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+							didScroll = false;
+						};
+
+						scrollFn();
+
+						[].slice.call( document.querySelectorAll( '.morph-button' ) ).forEach( function( bttn ) {
+							new UIMorphingButton( bttn, {
+								closeEl : '.icon-close',
+								onBeforeOpen : function() {
+									noScroll();
+								},
+								onAfterOpen : function() {
+									canScroll();
+									classie.addClass( document.body, 'noscroll' );
+									classie.addClass( bttn, 'scroll' );
+								},
+								onBeforeClose : function() {
+									classie.removeClass( document.body, 'noscroll' );
+									classie.removeClass( bttn, 'scroll' );
+									noScroll();
+								},
+								onAfterClose : function() {
+									canScroll();
+								}
+							} );
+						} );
+					})();
+				</script>
+
 		    </div>
 
 			<div id="shout-outs">
 
 					<h2>shout.outs_</h2>
-					<ul>
-						<li>
 
-							<div class="qoutes-container">
-
+					<div class="cd-testimonials-wrapper cd-container">
+						<ul class="cd-testimonials">
+							<li>
 								<img src="images/dylon.jpg" alt="profile-photo" class="user-profile-photo" >
-								<h4>JOHN DOE</h4>
-								<h6>SENIOR VICE PRESIDENT</h6>
-								<h6>AWESOME INDUSTRIES </h6>
 								<p>
 									Dolore qui laboris cillum fugiat velit labore id non.
 									Dolor dolore ad quis aliqua amet.
@@ -204,47 +364,179 @@
 									Qui tempor culpa commodo exercitation.
 								</p>
 
-							</div>
+								<div class="author">
 
-						</li>
-						<li>
+									<ul class="cd-author-info">
+										<li> -Dylon Smith</li>
+										<li> CEO, AmberCreative</li>
+									</ul>
+								</div>
 
-							<div class="qoutes-container">
+							</li>
 
+							<li>
 								<img src="images/dylon.jpg" alt="profile-photo" class="user-profile-photo" >
-								<h4>JANE DOE</h4>
-								<h6>VICE PRESIDENT</h6>
-								<h6>AWESOME INDUSTRIES </h6>
 								<p>
-									Eu aliquip sint labore ad culpa duis magna.
-									Tempor incididunt ex dolor dolor mollit proident.
-									Aute officia velit id excepteur incididunt minim nulla ea tempor laboris nulla eiusmod velit laborum.
-									Voluptate ipsum elit id pariatur irure.
+									Dolore qui laboris cillum fugiat velit labore id non.
+									Dolor dolore ad quis aliqua amet.
+									Quis est fugiat labore ad commodo tempor pariatur ut mollit occaecat ut irure incididunt ea.
+									Qui tempor culpa commodo exercitation.
 								</p>
 
-							</div>
+								<div class="author">
 
-						</li>
-						<li>
+									<ul class="cd-author-info">
+										<li> -Dylon Smith</li>
+										<li> CEO, AmberCreative</li>
+									</ul>
+								</div>
 
-							<div class="qoutes-container">
+							</li>
 
+							<li>
 								<img src="images/dylon.jpg" alt="profile-photo" class="user-profile-photo" >
-								<h4>JANET DOE</h4>
-								<h6>VICE PRESIDENT</h6>
-								<h6>AWESOME INDUSTRIES </h6>
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-									Pellentesque facilisis sapien nisl, eget rhoncus orci vehicula at.
-									Ut id enim quis metus facilisis rutrum vitae eu orci.
-									Morbi condimentum gravida eros efficitur consectetur.
+									Dolore qui laboris cillum fugiat velit labore id non.
+									Dolor dolore ad quis aliqua amet.
+									Quis est fugiat labore ad commodo tempor pariatur ut mollit occaecat ut irure incididunt ea.
+									Qui tempor culpa commodo exercitation.
+									Quis est fugiat labore ad commodo tempor pariatur ut mollit occaecat ut irure incididunt ea.
+									Qui tempor culpa commodo exercitation mollit occaecat ut irure incididunt ea.
+
 								</p>
 
-							</div>
+								<div class="author">
 
-						</li>
-					</ul>
+									<ul class="cd-author-info">
+										<li> -Dylon Smith</li>
+										<li> Vice President, AmberCreative</li>
+									</ul>
+								</div>
 
+							</li>
+
+						</ul> <!-- cd-testimonials -->
+
+						<a href="#0" class="cd-see-all"><img src="images/see-all.png">See All</a>
+					</div> <!-- cd-testimonials-wrapper -->
+
+					<div class="cd-testimonials-all">
+						<div class="cd-testimonials-all-wrapper">
+							<ul>
+								<li class="cd-testimonials-item">
+									<p>
+										Dolore qui laboris cillum fugiat velit labore id non.
+										Dolor dolore ad quis aliqua amet.
+										Quis est fugiat labore ad commodo tempor pariatur ut mollit occaecat ut irure incididunt ea.
+										Qui tempor culpa commodo exercitation.
+									</p>
+
+									<div class="cd-author">
+										<img src="images/dylon.jpg" alt="profile-photo" class="user-profile-photo" >
+										<ul class="cd-author-info">
+											<li>MyName</li>
+											<li>CEO, CompanyName</li>
+										</ul>
+									</div> <!-- cd-author -->
+								</li>
+
+								<li class="cd-testimonials-item">
+									<p>
+										Dolore qui laboris cillum fugiat velit labore id non.
+										Dolor dolore ad quis aliqua amet.
+										Quis est fugiat labore ad commodo tempor pariatur ut mollit occaecat ut irure incididunt ea.
+										Qui tempor culpa commodo exercitation.
+										Dolore qui laboris cillum fugiat velit labore id non.
+										Dolor dolore ad quis aliqua amet.
+										Quis est fugiat labore ad commodo tempor pariatur ut mollit occaecat ut irure incididunt ea.
+										Qui tempor culpa commodo exercitation.
+									</p>
+									<div class="cd-author">
+										<img src="images/dylon.jpg" alt="profile-photo" class="user-profile-photo" >
+										<ul class="cd-author-info">
+											<li>MyName</li>
+											<li>CEO, CompanyName</li>
+										</ul>
+									</div> <!-- cd-author -->
+								</li>
+
+								<li class="cd-testimonials-item">
+									<p>
+										Dolore qui laboris cillum fugiat velit labore id non.
+										Dolor dolore ad quis aliqua amet.
+										Quis est fugiat labore ad commodo tempor pariatur ut mollit occaecat ut irure incididunt ea.
+										Qui tempor culpa commodo exercitation.
+									</p>
+
+									<div class="cd-author">
+										<img src="images/dylon.jpg" alt="profile-photo" class="user-profile-photo" >
+										<ul class="cd-author-info">
+											<li>MyName</li>
+											<li>CEO, CompanyName</li>
+										</ul>
+									</div> <!-- cd-author -->
+								</li>
+
+								<li class="cd-testimonials-item">
+									<p>
+										Dolore qui laboris cillum fugiat velit labore id non.
+										Dolor dolore ad quis aliqua amet.
+										Quis est fugiat labore ad commodo tempor pariatur ut mollit occaecat ut irure incididunt ea.
+										Qui tempor culpa commodo exercitation.
+										Dolore qui laboris cillum fugiat velit labore id non.
+										Dolor dolore ad quis aliqua amet.
+										Quis est fugiat labore ad commodo tempor pariatur ut mollit occaecat ut irure incididunt ea.
+										Qui tempor culpa commodo exercitation.
+									</p>
+									<div class="cd-author">
+										<img src="images/dylon.jpg" alt="profile-photo" class="user-profile-photo" >
+										<ul class="cd-author-info">
+											<li>MyName</li>
+											<li>CEO, CompanyName</li>
+										</ul>
+									</div> <!-- cd-author -->
+								</li>
+
+								<li class="cd-testimonials-item">
+									<p>
+										Dolore qui laboris cillum fugiat velit labore id non.
+										Dolor dolore ad quis aliqua amet.
+										Quis est fugiat labore ad commodo tempor pariatur ut mollit occaecat ut irure incididunt ea.
+										Qui tempor culpa commodo exercitation.
+									</p>
+									<div class="cd-author">
+										<img src="images/dylon.jpg" alt="profile-photo" class="user-profile-photo" >
+										<ul class="cd-author-info">
+											<li>MyName</li>
+											<li>CEO, CompanyName</li>
+										</ul>
+									</div> <!-- cd-author -->
+								</li>
+
+								<li class="cd-testimonials-item">
+									<p>
+										Dolore qui laboris cillum fugiat velit labore id non.
+										Dolor dolore ad quis aliqua amet.
+										Quis est fugiat labore ad commodo tempor pariatur ut mollit occaecat ut irure incididunt ea.
+										Qui tempor culpa commodo exercitation.
+										Dolore qui laboris cillum fugiat velit labore id non.
+										Dolor dolore ad quis aliqua amet.
+										Quis est fugiat labore ad commodo tempor pariatur ut mollit occaecat ut irure incididunt ea.
+										Qui tempor culpa commodo exercitation.
+									</p>
+									<div class="cd-author">
+										<img src="images/dylon.jpg" alt="profile-photo" class="user-profile-photo" >
+										<ul class="cd-author-info">
+											<li>MyName</li>
+											<li>CEO, CompanyName</li>
+										</ul>
+									</div> <!-- cd-author -->
+								</li>
+
+						</div>	<!-- cd-testimonials-all-wrapper -->
+
+						<a href="#0" class="close-btn">Close</a>
+					</div> <!-- cd-testimonials-all -->
 			</div>
 
 			<div id="contact">
@@ -273,6 +565,7 @@
 		<footer>
 			<!-- <p>&copy; 2015 Dylon Smith</p> -->
 		</footer>
+
 
 	</body>
 

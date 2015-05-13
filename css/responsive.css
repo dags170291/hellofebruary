@@ -164,8 +164,8 @@
 	MOBILE-NAV-MENU-LABEL
 	***********************************************************/
 	#toggle-nav-label {
-		color: rgba(0,0,0,0.5);
-		background: rgba(0,0,0,0.2);
+		color: #282828;
+		/*background: #fff;*/
 		text-align: cenetr;
 		cursor: pointer;
 		z-index: 2200;
@@ -192,16 +192,16 @@
 	}
 
 	#toggle-nav:checked ~ #toggle-nav-label {
-		color: #000;
-		background: #fff;
+		color: #282828;
+		/*background: #fff;*/
 		background-image: url("../images/close-icon.png");
 		background-repeat: no-repeat;
 		background-size: 30px;
 		background-position: left center;
-		vertical-align: middle;
+		/*vertical-align: middle;*/
 	}
 
-	#toggle-nav + label:after {
+	/*#toggle-nav + label:after {
   		content:"MENU";
 		text-align: right;
 	}
@@ -209,24 +209,24 @@
 	#toggle-nav:checked + label:after {
   		content:"CLOSE";
 		text-align: right;
-	}
+	}*/
 
 	#toggle-nav + label {
 		font-family: 'Open Sans',sans-serif;
-		font-size:.95em;
+		font-size:1.25em;
 		font-weight: 700;
-		line-height:15px;
+		line-height:12px;
 	  	position:absolute;
 	  	cursor:pointer;
-	  	padding:5px;
-		width: 70px;
-		height: 12px;
+	  	padding:10px;
+		width: 60px;
+		height: 15px;
 		border-radius: 2px;
 		padding: 8px 10px;
 		color: #000;
 		text-align:right;
 		position: fixed;
-	  	background: #fff;
+	  	/*background: #fff;*/
 		background-image: url("../images/menu-icon.png");
 		background-repeat: no-repeat;
 		background-size: 30px;
@@ -459,4 +459,11 @@
 	  	top: 40%;
 
 	}
+    .icon-close img{
+    	position: absolute;
+    	width: 30px;
+    	height: 30px;
+    	margin: 15px 0 0 40%;
+    	position: fixed;
+    }
 }
