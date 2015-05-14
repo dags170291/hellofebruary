@@ -206,6 +206,7 @@ SECTION: MY WORK/PORTFOLIO
   	position: relative;
 	width: 30%;
 	height: 100%;
+	margin: 5px;
 }
 
 .effects .img img {
@@ -290,11 +291,10 @@ SECTION: SHOUT-OUTS
 
 .user-profile-photo{
 	display:inline-block;
-	/*float: right;*/
-	max-width: 125px;
+	max-width: 100px;
 	margin: 10px;
 	border-radius: 100px;
-	border:rgba(40, 40, 40,0.1) solid 15px;
+	border:rgba(40, 40, 40,0.8) solid 3px;
 }
 
 #shout-outs p{
@@ -314,7 +314,7 @@ SECTION: SHOUT-OUTS
 
 #shout-outs .author ul{
 	display: inline;
-	width: 80%
+	width: 80%;
 }
 #shout-outs .author ul li{
 	list-style: none;
@@ -553,7 +553,6 @@ SECTION: ANIMATIONS
 
 
 /* Morph Button: Default Styles */
-
 .morph-button {
 	position: relative;
 	display: inline-block;
@@ -564,13 +563,14 @@ SECTION: ANIMATIONS
 	position: relative;
 	/*padding: 0 1em;*/
 	border: none;
-	background-color: #282828;
-	/*color: #f9f6e5;
-	text-transform: uppercase;
+	background-color: #fff;
+	/*color: #f9f6e5;*/
+	/*text-transform: uppercase;*/
 	letter-spacing: 1px;
 	font-weight: 700;
-	line-height: 80px;*/
 	overflow: hidden;
+	cursor: pointer;
+
 }
 .morph-button > button img{
 	width: 40px;
@@ -590,16 +590,17 @@ SECTION: ANIMATIONS
 }
 
 /* Common styles for overlay and modal type (fixed morph) */
+
 .morph-button-fixed,
 .morph-button-fixed .morph-content {
-	width: 150px;
-	height: 80px;
+	width: 100%;
+	height: 40px;
 }
 
 .morph-button-fixed > button {
-	z-index: 1000;
+	z-index: 1200;
 	width: 100%;
-	height: 100%;
+	/*height: 100%;*/
 	-webkit-transition: opacity 0.1s 0.5s;
 	transition: opacity 0.1s 0.5s;
 }
@@ -660,13 +661,10 @@ SECTION: ANIMATIONS
 }
 
 /* Morph Button Style: Overlay */
-.morph-button.morph-button-overlay {
-	margin: 10px auto;
-}
 
 .morph-button-overlay .morph-content {
 	overflow: auto;
-	background: #e85657;
+	background: #e74c3c;
 }
 
 .morph-button-overlay.open .morph-content {
@@ -675,9 +673,6 @@ SECTION: ANIMATIONS
 	width: 100%;
 	height: 100%;
 }
-
-
-
 
 .icon-close img{
 	position: absolute;
