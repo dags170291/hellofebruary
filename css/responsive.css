@@ -171,7 +171,7 @@
 		z-index: 2200;
 		height: 10px;
 		position: fixed;
-		margin: 10px 0 10px 30px;
+        margin: 15px 0 auto 30px;
 		padding: 5px 10px 0;
 	}
 
@@ -310,6 +310,15 @@
 	#top h1{
 		margin-right: 10px;
 	}
+    .desktop-logo{
+        display: none;
+    }
+
+    .mobile-logo{
+        display: inline;
+        float: right;
+        margin-right: 20px;
+    }
 
 	/***********************************************************
 	SECTION:ABOUT
@@ -441,7 +450,7 @@
 	#toggle-nav + label {
 		width: 30px;
 		background-position:center;
-		margin: 10px 0 auto 10px;
+		margin: 15px 0 auto 20px;
 
 	}
 	#toggle-nav:checked ~ #toggle-nav-label {
