@@ -258,13 +258,13 @@ SECTION: FIND ME/ CANTACT ME
 #contact{
 	margin: 30px auto 0;
 	width: 95%;
-	height: 100vh;
+	height: 100%;
 	background-color: #282828;
 }
 
 
 #contact p{
-	font-size: 7em;
+	font-size: 1.85em;
 	width: 100%;
 	margin: 0 auto;
 	padding: 20px;
@@ -277,8 +277,8 @@ SECTION: FIND ME/ CANTACT ME
 }
 
 #contact ul{
-	max-width: 90%;
-	margin: 100px auto 10px;
+	max-width: 100%;
+	margin: 20px auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -292,15 +292,15 @@ SECTION: FIND ME/ CANTACT ME
 	text-decoration: none;
 	padding: 15px;
 	margin: 0px;
-	opacity: 0.4;
+	/*opacity: 0.4;*/
 
 }
 
 #contact ul a li img{
 	list-style: none;
-	opacity: .3;
-	width:60px;
-	height: 60px;
+	opacity: 0.8;
+	width:40px;
+	height: 40px;
 }
 
 #contact ul li{
@@ -311,9 +311,9 @@ SECTION: FIND ME/ CANTACT ME
 	opacity: 1;
 }
 
-#contact h3{
+#contact h4{
 	text-align: center;
-	margin: 50px auto;
+	margin: 0 auto;
 	color:#fff;
 	opacity: 0.2;
 	font-family: 'Cutive Mono',monospace;
@@ -323,21 +323,24 @@ SECTION: FIND ME/ CANTACT ME
 
 .mail{
 	list-style:none;
-	margin: auto;
+	margin: 50px auto;
 	width: 100%;
 	text-align: center;
+
 }
 
 .mail a{
 	text-decoration:none;
-	padding-bottom: 20px;
+	padding: 20px;
 	color: #fff;
 	font-family: 'Cutive Mono',monospace;
-	letter-spacing: 5px;
-	font-size: 1.75em;
+	letter-spacing: 3px;
+	font-size: 1.25em;
 	color:#7f8c8d;
 	opacity: 0.4;
 	text-align: center;
+	border: #fff solid 3px;
+	margin: 30px auto;
 }
 
 
@@ -453,10 +456,10 @@ SECTION: ANIMATIONS
 
 .og-grid {
 	list-style: none;
-	padding: 20px 20px;
+	padding: 20px 0px;
 	margin: 20px auto;
 	text-align: center;
-	width: 80%;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -478,7 +481,7 @@ SECTION: ANIMATIONS
 
 .og-grid li{
 	width: 30%;
-	margin-bottom: -4px;
+	margin-bottom: -2px;
 
 }
 
@@ -494,7 +497,7 @@ SECTION: ANIMATIONS
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-bottom-color: #ddd;
+	border-bottom-color: rgba(231, 76, 60,1.0);
 	border-width: 15px;
 	left: 50%;
 	margin: -20px 0 0 -15px;
@@ -502,7 +505,7 @@ SECTION: ANIMATIONS
 
 .og-expander {
 	position: absolute;
-	background: #ddd;
+	background: #e74c3c;
 	top: auto;
 	right: 0;
 	width: 80%;
@@ -510,11 +513,13 @@ SECTION: ANIMATIONS
 	text-align: left;
 	height: 0;
 	overflow: auto;
+	z-index: 1;
 }
 
 .og-expander-inner {
 	padding: 50px 30px;
 	height: 100%;
+	background: #e74c3c;
 }
 
 .og-close {
@@ -533,7 +538,7 @@ SECTION: ANIMATIONS
 	width: 100%;
 	top: 50%;
 	height: 1px;
-	background: #888;
+	background: #fff;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	transform: rotate(45deg);
@@ -585,7 +590,7 @@ SECTION: ANIMATIONS
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
-	color: #999;
+	color: #404040;
 }
 
 .og-details a {
@@ -608,15 +613,15 @@ SECTION: ANIMATIONS
 }
 
 .og-details a:hover {
-	border-color: #999;
-	color: #999;
+	border-color: #484848;
+	color: #484848;
 }
 
 .og-loading {
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	background: #ddd;
+	background: #282828;
 	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
 	position: absolute;
 	top: 50%;

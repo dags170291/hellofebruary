@@ -24,7 +24,9 @@ Main components
   padding: 10px 40px 20px;
   z-index: 1;
 }
-
+.cd-testimonials{
+    margin-bottom: 20px;
+}
 
 .flex-direction-nav li {
   position: absolute;
@@ -109,7 +111,7 @@ Main components
     display: inline;
     vertical-align: middle;
     margin-right: 5px;
-    margin-bottom: 5px;
+    /*margin-bottom: 5px;*/
 
     -webkit-transition: color, 0.2s;
     -moz-transition: color, 0.2s;
@@ -119,15 +121,15 @@ Main components
 .cd-see-all {
     font-family:'Cutive Mono', monospace;
     position: absolute;
-    padding: 60px 0 0;
-
-    vertical-align: middle;
+    padding: 90px 0 0;
+    /*margin-top: 150px;*/
+    /*vertical-align: bottom;*/
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 120px;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     color: #282828;
     font-weight: 700;
@@ -138,6 +140,8 @@ Main components
     transition: color, 0.2s;
     opacity: 0.5;
 }
+
+
 .no-touch .cd-see-all:hover {
   color: #e74c3c;
   opacity: 1;
@@ -247,20 +251,7 @@ Main components
   -o-transform: translate3d(0, 0, 0) scale(1);
   transform: translate3d(0, 0, 0) scale(1);
 }
-@media only screen and (min-width: 768px) {
-  .cd-testimonials-all .cd-testimonials-item {
-    width: 46%;
-    margin: 0 2% 3em;
-  }
-  .cd-testimonials-all .cd-author {
-    margin-left: 1em;
-  }
-}
-@media only screen and (min-width: 1170px) {
-  .cd-testimonials-all .cd-testimonials-item {
-    width: 30%;
-    margin: 0 1.6666% 3em;
-  }
+
 }
 
 .close-btn {

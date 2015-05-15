@@ -75,18 +75,23 @@
 		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 	}
 	#top{
-		position: fixed;
+		/*position: fixed;*/
 		/*box-shadow: 0 0px 5px #282828;*/
 		height: 50px;
 		z-index: 1900;
-		opacity: 0.95;
+        background: none;
+        padding: 15px 0;
+		/*opacity: 0.95;*/
 	}
 	#top h1{
 		text-align: right;
 		margin-right: 30px;
-
+        margin-top: 0;
+        color: #fff;
 
 	}
+
+
 	/**********************************************************
 	MOBILE-NAV-MENU
 	***********************************************************/
@@ -176,14 +181,15 @@
 	***********************************************************/
 	#toggle-nav-label {
 		color: #282828;
-		/*background: #fff;*/
+		background: #fff;
 		text-align: cenetr;
 		cursor: pointer;
 		z-index: 2200;
 		height: 10px;
 		position: fixed;
-        margin: 15px 0 auto 30px;
+        margin: 0px 0 auto 20px;
 		padding: 5px 10px 0;
+
 	}
 
 	#toggle-nav {
@@ -208,7 +214,7 @@
 		background-image: url("../images/close-icon.png");
 		background-repeat: no-repeat;
 		background-size: 30px;
-		background-position: left center;
+		background-position: center center;
 		/*vertical-align: middle;*/
 	}
 
@@ -224,25 +230,21 @@
 
 	#toggle-nav + label {
 		font-family: 'Open Sans',sans-serif;
-		font-size:1.25em;
-		font-weight: 700;
-		line-height:12px;
+
+		/*line-height:12px;*/
 	  	position:absolute;
 	  	cursor:pointer;
 	  	padding:10px;
-		width: 60px;
-		height: 15px;
-		border-radius: 2px;
-		padding: 8px 10px;
-		color: #000;
-		text-align:right;
+		width: 50px;
+		height: 50px;
+        margin-top: 15px;
+		border-radius: 100%;
 		position: fixed;
-	  	/*background: #fff;*/
+	  	background: #eee;
 		background-image: url("../images/menu-icon.png");
 		background-repeat: no-repeat;
 		background-size: 30px;
-		background-position: left center;
-		vertical-align: middle;
+		background-position: center center;
 		cursor: pointer;
 	  	transition:all 500ms ease;
 	}
@@ -256,12 +258,6 @@
 		width: 45%;
 	}
 
-	#contact p{
-		font-size: 8em;
-		line-height: 80px;
-		margin-top:0px;
-		padding-top: 50px;
-	}
 }
 
 @media screen and (max-width: 768px){
@@ -311,19 +307,21 @@
 
 	#menu li{
 		font-size: 1em;
-		margin: 0 0 0 30px;
+		margin: 0 20px 0 30px;
 
 
 
 	}
 	#top{
+        /*display: none;*/
 		width: 100%;
-		height: 45px;
-		background:#fff;
+		height: 80px;
+		/*background:#fff;*/
+        /*border-radius: 100%;*/
+        float:right;
+
 	}
-	#top h1{
-		margin-right: 10px;
-	}
+
     .desktop-logo{
         display: none;
     }
@@ -331,7 +329,8 @@
     .mobile-logo{
         display: inline;
         float: right;
-        margin-right: 20px;
+        margin: 0;
+        color: #fff;
     }
 
 	/***********************************************************
@@ -429,27 +428,30 @@
 
 	#contact{
 		height: 100%;
-		margin: 10px 0 0;
-	}
 
-	#contact ul{
-		max-width: 85%;
-		margin: 50px auto;
 	}
-	#contact p{
-		font-size: 3em;
-		line-height: 60px;
-		margin-top:30px;
-	}
+    #contact ul a li img{
+    	list-style: none;
+    	opacity: 0.8;
+    	width:30px;
+    	height: 30px;
+    }
 
-	.mail{
-		/*width: 70%;*/
-		margin: auto;
-	}
-	.mail a{
-		font-size: 1em;
-		margin-bottom: 20px;
-	}
+    #contact ul a{
+    	text-decoration: none;
+    	padding: 5px;
+    	margin: 0px;
+
+
+    }
+    #contact p{
+    	font-size: 1.25em;
+        line-height: 20px
+    }
+
+    .mail a{
+        font-size: 0.85em;
+    }
 
 	#toggle-nav + label:after {
 		content: "";
@@ -462,9 +464,11 @@
 	}
 
 	#toggle-nav + label {
-		width: 30px;
+		width: 40px;
+        height: 40px;
 		background-position:center;
 		margin: 15px 0 auto 20px;
+        background-size: 20px;
 
 	}
 	#toggle-nav:checked ~ #toggle-nav-label {
@@ -490,6 +494,65 @@
     	position: fixed;
     }
 
+    .cd-testimonials-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      max-width: 768px;
+      margin: 0 auto 0px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding: 10px 0px 20px;
+      z-index: 1;
+    }
+
+    .og-fullimg{
+        display: none;
+
+    }
+    .og-details {
+    	width: 90%;
+    	float: left;
+    	height: 100%;
+    	overflow: hidden;
+    	position: relative;
+    }
+
+    .og-fullimg img {
+    	display: block;
+    	max-height: 100%;
+    	max-width: 100%;
+    	padding-top:15px;
+    }
+    .og-expander-inner {
+        padding:50px 20px 10px;
+    }
+    .og-details h3 {
+    	font-weight: 300;
+    	font-size: 2.5em;
+    	padding: 0px 0 10px;
+    	margin: 0;
+    }
+
+    .og-details p {
+    	/*font-weight: 400;*/
+    	font-size: .85em;
+    	line-height: 20px;
+    	color: #404040;
+    }
+
+    .og-details a {
+    	font-weight: 700;
+    	font-size: 16px;
+    	color: #333;
+    	text-transform: uppercase;
+    	letter-spacing: 2px;
+    	padding: 10px 20px;
+    	border: 3px solid #333;
+    	display: inline-block;
+    	margin: 30px 0 0;
+    	outline: none;
+    }
 
 
 }
