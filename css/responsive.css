@@ -230,9 +230,7 @@
 	}*/
 
 	#toggle-nav + label {
-		font-family: 'Open Sans',sans-serif;
 
-		/*line-height:12px;*/
 	  	position:absolute;
 	  	cursor:pointer;
 	  	padding:10px;
