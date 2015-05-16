@@ -572,9 +572,9 @@
         width: 100%;
     }
 
-    /*.cd-testimonials-all p{
-        margin-top: 0px;
-    }*/
+    .cd-testimonials-all p{
+        margin-top: 20px;
+    }
     .cd-testimonials-all .cd-author {
       /*text-align: left;*/
       margin-left: 50px;
