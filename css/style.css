@@ -120,16 +120,13 @@ Main components
 
 .cd-see-all {
     font-family:'Cutive Mono', monospace;
-    position: absolute;
-    padding: 90px 0 0;
-    /*margin-top: 150px;*/
-    /*vertical-align: bottom;*/
+    position:inherit;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 120px;
+    height: 80px;
     text-decoration: none;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     color: #282828;
     font-weight: 700;
@@ -172,7 +169,7 @@ Main components
 .cd-testimonials-all .cd-testimonials-all-wrapper > ul {
   width: 90%;
   max-width: 1170px;
-  margin:50px auto;
+  margin:70px auto;
 }
 .cd-testimonials-all .cd-testimonials-all-wrapper > ul::after {
   clear: both;
@@ -180,7 +177,8 @@ Main components
   display: table;
 }
 .cd-testimonials-all .cd-testimonials-item {
-  margin-bottom: 2em;
+  margin-bottom: 32px;
+  width: 30%;
   opacity: 0;
   /* Force Hardware Acceleration in WebKit */
   -webkit-transform: translate3d(0, 0, 0) scale(0.4);
@@ -208,12 +206,12 @@ Main components
 }
 .cd-testimonials-all .cd-author {
   text-align: left;
-  /*margin-left: 30px;*/
+  margin-left: 35px;
 }
 
 #shout-outs .cd-testimonials-item p {
   position: relative;
-  background: #e74c3c;
+  background-color: #e74c3c;
   color: #282828;
   padding: 20px 20px;
   -webkit-font-smoothing: antialiased;
@@ -232,6 +230,8 @@ Main components
 }
 .cd-testimonials-all .cd-author img {
   box-shadow: 0 0 0 transparent;
+  margin-left: 0;
+
 }
 .cd-testimonials-all.is-visible {
   visibility: visible;
@@ -257,25 +257,32 @@ Main components
 .close-btn {
   position: fixed;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   top: 10px;
   right: 20px;
+  float: right;
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
 }
-.close-btn::before, .close-btn::after {
+.close-btn::before,
+.close-btn::after {
   /* close icon in css */
   content: '';
   position: absolute;
   display: inline-block;
   width: 2px;
-  height: 24px;
-  top: 8px;
-  left: 19px;
-  background-color: #39393c;
+  height: 25px;
+  top: 50px;
+  right: 80px;
+  background-color: #282828;
+}
+
+.close-btn:hover::before,
+.close-btn:hover::after{
+    background-color: #e743c3;
 }
 .close-btn::before {
   -webkit-transform: rotate(45deg);

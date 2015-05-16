@@ -31,7 +31,7 @@ h2{
 	color:#E42829;
 	width: 100%;
 	margin: 0 auto;
-	background:#fff;
+	background-color:#fff;
 	padding: 20px 0;
 	text-align: center;
 }
@@ -60,7 +60,7 @@ NAVIGATION
 	width: 20%;
 	height:100%;
 	position: fixed;
-	background: #282828;
+	background-color: #282828;
 
 }
 
@@ -136,7 +136,7 @@ HEADER CONTENT
 #top{
 	width: 100%;
 	height: 45px;
-	background:#fff;
+	background-color: :#fff;
 }
 #top h1{
 	font-family: 'Montserrat', sans-serif;
@@ -144,6 +144,7 @@ HEADER CONTENT
 	margin: 5px 0 ;
 	font-weight: 700;
 	color: #282828;
+	background-color: #fff;
 }
 
 
@@ -193,7 +194,7 @@ SECTION: MY WORK/PORTFOLIO
 	margin: 50px auto 0;
 	width: 95%;
 	text-align: center;
-	background: #282828;
+	background-color: #282828;
 	height: 100%;
 }
 
@@ -369,7 +370,7 @@ SECTION: ANIMATIONS
   left: 0px;
   right: 100%;
   bottom: 0;
-  background: #E42829;
+  background-color: #E42829;
   height: 2.5px;
 	opacity: 0.8;
   -webkit-transition-property: right;
@@ -423,7 +424,7 @@ SECTION: ANIMATIONS
   left: 0;
   right: 0;
   bottom: 0;
-  background: #E42829;
+  background-color: #E42829;
   height: 4px;
   -webkit-transform: translateY(4px);
   transform: translateY(4px);
@@ -505,7 +506,7 @@ SECTION: ANIMATIONS
 
 .og-expander {
 	position: absolute;
-	background: #e74c3c;
+	background-color: #e74c3c;
 	top: auto;
 	right: 0;
 	width: 80%;
@@ -519,26 +520,29 @@ SECTION: ANIMATIONS
 .og-expander-inner {
 	padding: 50px 30px;
 	height: 100%;
-	background: #e74c3c;
+	background-color: #e74c3c;
 }
 
 .og-close {
 	position: absolute;
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 	top: 20px;
 	right: 20px;
 	cursor: pointer;
+	border-radius: 100%;
+	background-color: #282828;
 }
 
 .og-close::before,
 .og-close::after {
 	content: '';
 	position: absolute;
-	width: 100%;
+	width: 50%;
 	top: 50%;
-	height: 1px;
-	background: #fff;
+	height: 2px;
+	right:25%;
+	background-color: #fff;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	transform: rotate(45deg);
@@ -552,7 +556,7 @@ SECTION: ANIMATIONS
 
 .og-close:hover::before,
 .og-close:hover::after {
-	background: #333;
+	background-color: #e74c3c;
 }
 
 .og-fullimg,
@@ -621,7 +625,7 @@ SECTION: ANIMATIONS
 	width: 20px;
 	height: 20px;
 	border-radius: 50%;
-	background: #282828;
+	background-color: #282828;
 	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
 	position: absolute;
 	top: 50%;
