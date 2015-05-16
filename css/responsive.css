@@ -558,7 +558,7 @@
     	outline: none;
     }
     .cd-testimonials-all .cd-testimonials-item {
-      margin-bottom: 0;
+      margin-bottom: 5px;
       width: 100%;
       opacity: 0;
     }
@@ -577,7 +577,7 @@
     }*/
     .cd-testimonials-all .cd-author {
       /*text-align: left;*/
-      margin-left: 60px;
+      margin-left: 50px;
     }
 
 }
