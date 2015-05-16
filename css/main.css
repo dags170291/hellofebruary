@@ -601,15 +601,18 @@ SECTION: ANIMATIONS
 
 .og-details a {
 	font-weight: 700;
-	font-size: 16px;
-	color: #333;
+	font-size: 0.75em;
+	color: #eee;
 	text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: 3px;
 	padding: 10px 20px;
-	border: 3px solid #333;
+	border: 3px solid #eee;
 	display: inline-block;
 	margin: 30px 0 0;
 	outline: none;
+	font-family: 'Cutive Mono', monospace;
+	opacity: 0.8;
+	text-decoration: none;
 }
 
 .og-details a::before {
@@ -619,8 +622,9 @@ SECTION: ANIMATIONS
 }
 
 .og-details a:hover {
-	border-color: #484848;
-	color: #484848;
+	/*border-color: #484848;
+	color: #484848;*/
+	opacity: 1;
 }
 
 .og-loading {
