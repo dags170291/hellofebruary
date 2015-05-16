@@ -589,13 +589,14 @@ SECTION: ANIMATIONS
 	font-size: 52px;
 	padding: 0px 0 10px;
 	margin: 0;
+	color: #fff;
 }
 
 .og-details p {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
-	color: #404040;
+	color: #eee;
 }
 
 .og-details a {
