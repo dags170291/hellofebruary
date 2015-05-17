@@ -183,7 +183,7 @@ SECTION: ABOUT
 	display:inline-block;
 	max-width: 200px;
 	margin: 20px;
-	border-radius: 100px;
+	border-radius: 100%;
 }
 
 #about p {
