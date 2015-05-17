@@ -294,13 +294,14 @@
 	}
 
 	#navigation p{
-		text-align: left;
-		margin: 0 0 10px 18px;
+		text-align: center;
+		/*margin: 0 0 10px 18px;*/
 		vertical-align: bottom;
 		font-size: 1.85em;
 		position: absolute;
 		bottom: 0;
 		font-weight: 800;
+        width: 100%;
 	}
     #menu .box{
         height: 100%;
@@ -320,9 +321,10 @@
 
 	#menu li{
 		font-size: 1em;
-		margin: 0 20px 0 20px;
+		margin: 0 ;
         width: 100%;
         height: 50px;
+        text-align: center;
 
 
 
