@@ -177,7 +177,7 @@ Main components
   display: table;
 }
 .cd-testimonials-all .cd-testimonials-item {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   width: 30%;
   opacity: 0;
   /* Force Hardware Acceleration in WebKit */
