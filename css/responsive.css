@@ -118,9 +118,16 @@
 		-o-transition: all 0.3s ease-in-out;
 		transition: all 0.3s ease-in-out;
 	}
-	#navigation{
+    #navigation{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		float: left;
 		/*width: 200px;*/
 		/*position: relative;*/
@@ -128,7 +135,8 @@
 		width:40%;
 		float: left;
 		margin: 145px 30px 0 auto;
-		height: 100%;
+  		height: 100%;
+}
 
 	}
 	#navigation p{
@@ -141,23 +149,23 @@
 		font-family: 'cutive Mono', monospace;
 		font-weight: 700;
 	}
-	#menu ul {
-		position: relative;
-        display: flex;
-		/*top: 5%;*/
-		width:50%;
-		float: right;
-		margin: auto;
-		height: 100vh;
-		-webkit-transform: scale(2);
-		-moz-transform: scale(2);
-		-ms-transform: scale(2);
-		transform: scale(2);
-		-webkit-transition: all 0.3s ease-in-out;
-		-moz-transition: all 0.3s ease-in-out;
-		-o-transition: all 0.3s ease-in-out;
-		transition: all 0.3s ease-in-out;
-	}
+    #menu ul {
+    		position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+    		/*top: 5%;*/
+    		width:50%;
+    		float: right;
+    		margin: auto;
+    		height: 100vh;
+    		-webkit-transform: scale(2);
+    		-ms-transform: scale(2);
+    		transform: scale(2);
+    		-webkit-transition: all 0.3s ease-in-out;
+    		transition: all 0.3s ease-in-out;
+    	}
 
 	#menu li {
 		display: inline-block;
@@ -291,10 +299,20 @@
     #menu .box{
         height: 100%;
     }
-	#menu ul{
+    #menu ul{
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: start;
+		-webkit-justify-content: flex-start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
 		position: relative;
 		width:100%;
 		margin: auto;
@@ -365,16 +383,26 @@
 	SECTION:SHOUT-OUTS
 	************************************************************/
 
-	#shout-outs ul{
-		margin: auto;
-		padding: 0px;
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		/*justify-content: center;
-		align-content: center;*/
-	}
+    	#shout-outs ul{
+    		margin: auto;
+    		padding: 0px;
+    		width: 100%;
+    		display: -webkit-box;
+    		display: -webkit-flex;
+    		display: -ms-flexbox;
+    		display: flex;
+    		-webkit-box-orient: horizontal;
+    		-webkit-box-direction: normal;
+    		-webkit-flex-direction: row;
+    		    -ms-flex-direction: row;
+    		        flex-direction: row;
+    		-webkit-flex-wrap: wrap;
+    		    -ms-flex-wrap: wrap;
+    		        flex-wrap: wrap;
+    		/*justify-content: center;
+    		align-content: center;*/
+    	}
+
 	#shout-outs{
 		height: 100%;
 		padding: 0;
