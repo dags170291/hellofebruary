@@ -269,7 +269,7 @@ SECTION: FIND ME/ CANTACT ME
 	font-size: 1.85em;
 	width: 100%;
 	margin: 0 auto;
-	padding: 20px;
+	padding:10px;
 	line-height:70px;
 	color:#fff;
 	text-align: left;
@@ -300,7 +300,6 @@ SECTION: FIND ME/ CANTACT ME
 
 #contact ul a li img{
 	list-style: none;
-	opacity: 0.8;
 	width:40px;
 	height: 40px;
 }
@@ -310,7 +309,11 @@ SECTION: FIND ME/ CANTACT ME
 }
 
 #contact ul a:hover{
-	opacity: 1;
+	opacity: 0.2;
+	-webkit-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
 }
 
 #contact h4{
@@ -333,15 +336,14 @@ SECTION: FIND ME/ CANTACT ME
 
 .mail a{
 	text-decoration:none;
-	padding: 20px;
+	padding: 25px 30px;
 	color: #fff;
 	font-family: 'Cutive Mono',monospace;
 	letter-spacing: 3px;
-	font-size: 1.25em;
-	color:#7f8c8d;
-	opacity: 0.6;
+	font-size: 1em;
+	/*opacity: 0.6;*/
 	text-align: center;
-	border: #fff solid 3px;
+	border: #fff solid 2px;
 	margin: 30px auto;
 }
 
@@ -397,13 +399,13 @@ SECTION: ANIMATIONS
 }
 
 /*Contact*/
-#contact ul a li img:hover{
+/*#contact ul a li img:hover{
 	opacity: 1;
 	-webkit-transition-duration: 8s;
 	transition-duration: 8s;
 	-webkit-transition-timing-function: ease-out;
 	transition-timing-function: ease-out;
-}
+}*/
 
 .hvr-underline-reveal {
   display: inline-block;
@@ -445,7 +447,7 @@ SECTION: ANIMATIONS
 /*FIND ME ANIMATIONS*/
 .mail a:hover{
 	color: #fff;
-	opacity: 10;
+	opacity: 0.2;
 	-webkit-transition-duration: 0.8s;
 	transition-duration: 0.8s;
 	-webkit-transition-timing-function: ease-out;
