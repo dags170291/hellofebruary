@@ -270,6 +270,31 @@
 	.effects .img{
 		width: 45%;
 	}
+    #nav-header h1{
+        color: #e74c3c;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        vertical-align: bottom;
+        width: 100%;
+        font-size:2.5em;
+        margin: 0 0 30px 0;
+        padding-bottom: 15px;
+    }
+    #nav-header p{
+        color: #282828;
+        position: absolute;
+        bottom: 0;
+        text-align: left;
+        /*vertical-align: bottom;*/
+        /*width: 100%;*/
+        font-size:0.75em;
+        margin: 0 0 30px 60%;
+        /*padding-top: 40px;*/
+        /*height: 40px;*/
+        font-family:'cutive mono', monospace;
+        opacity: 0.5;
+    }
 
 }
 
@@ -300,7 +325,7 @@
         text-align: center;
         vertical-align: bottom;
         width: 100%;
-        font-size:2.5em;
+        font-size:1.25em;
         margin: 0;
         padding-bottom: 15px;
     }
