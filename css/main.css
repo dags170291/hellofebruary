@@ -45,7 +45,7 @@ h2{
 }
 
 .desktop-logo{
-	display: none;
+	/*display: none;*/
 }
 .highlight{
 	/*font-family:'Cutive Mono',monospace;*/
@@ -157,15 +157,16 @@ HEADER CONTENT
 #top{
 	width: 100%;
 	height: 45px;
-	background-color: :#fff;
+	background-color: :none;
 }
 #top h1{
 	font-family: 'Dosis', sans-serif;
-	text-align: center;
-	margin: 5px 0 ;
+	text-align: right;
+	margin: 0 20px ;
 	font-weight: 800;
-	color: #282828;
-	background-color: #fff;
+	color: #fff;
+	padding: 20px;
+	background-color: none;
 }
 
 
@@ -321,8 +322,8 @@ SECTION: FIND ME/ CANTACT ME
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	text-align: ceter;
-	padding: 0;
+	text-align: center;
+	padding: 20px 0 30px;
 	-webkit-flex-wrap: nowrap;
 	    -ms-flex-wrap: nowrap;
 	        flex-wrap: nowrap;

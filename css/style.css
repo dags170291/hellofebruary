@@ -106,8 +106,8 @@ Main components
 }
 
 .cd-see-all img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     display: inline;
     vertical-align: middle;
     margin-right: 5px;
@@ -130,7 +130,7 @@ Main components
     text-transform: uppercase;
     color: #282828;
     font-weight: 700;
-    font-size: 0.85em;
+    font-size: 0.75em;
     letter-spacing: 3px;
     -webkit-transition: color, 0.2s;
     -moz-transition: color, 0.2s;
@@ -167,7 +167,7 @@ Main components
   overflow: auto;
 }
 .cd-testimonials-all .cd-testimonials-all-wrapper > ul {
-  width: 90%;
+  width: 95%;
   max-width: 1170px;
   margin:70px auto;
 }
@@ -177,7 +177,7 @@ Main components
   display: table;
 }
 .cd-testimonials-all .cd-testimonials-item {
-  margin-bottom: 32px;
+  margin-bottom: 50px;
   width: 30%;
   opacity: 0;
   /* Force Hardware Acceleration in WebKit */
@@ -206,7 +206,7 @@ Main components
 }
 .cd-testimonials-all .cd-author {
   text-align: left;
-  margin-left: 35px;
+  margin-left: 20%;
 }
 
 #shout-outs .cd-testimonials-item p {
@@ -230,7 +230,7 @@ Main components
 }
 .cd-testimonials-all .cd-author img {
   box-shadow: 0 0 0 transparent;
-  margin-left: 0;
+  margin-left: 1em;
 
 }
 .cd-testimonials-all.is-visible {

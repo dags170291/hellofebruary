@@ -89,9 +89,11 @@
         margin-top: 5px;
         color: #fff;
         background: none;
-
 	}
-
+    .desktop-logo{
+        display: inline;
+        float: right;
+    }
 
 	/**********************************************************
 	MOBILE-NAV-MENU
