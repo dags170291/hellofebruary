@@ -286,11 +286,29 @@
 	.effects .img img {
 	  margin-bottom: -4px;
 	}
+    #nav-header{
+        width: 100%;
+        height: 15%;
+        position: relative;
+        margin-top:50px; 
+    }
+
+    #nav-header h1{
+        color: #282828;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        vertical-align: bottom;
+        width: 100%;
+        font-size:3em;
+        margin: 0;
+    }
+
 	#navigation{
 		width: 100%;
-		height:30%;
+		height:10%;
 		position:relative;
-
+        margin-top: 20px;
 	}
 
 	#navigation p{
@@ -312,7 +330,7 @@
 		position: relative;
 		width:100%;
 		margin: auto;
-		height: 60%;
+		height: 50%;
 		padding: 0;
 		top: 0;
 
