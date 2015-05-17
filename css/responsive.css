@@ -350,8 +350,9 @@
 		margin: 0;
 	}
 	.profile-photo{
-		max-width: 250px;
+		max-width: 275px;
 		margin-top: 10%;
+        border-radius: 100%;
 	}
 
 	#about p{
