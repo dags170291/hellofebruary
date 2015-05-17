@@ -78,11 +78,23 @@ NAVIGATION
 nav ul{
 	padding: 0;
 	margin-left: 10%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	height: 100vh;
-	flex-direction: column;
-	align-content: center;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-align-content: center;
+	    -ms-flex-line-pack: center;
+	        align-content: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 nav h3{
@@ -126,10 +138,10 @@ HEADER CONTENT
 	width: 100%;
 	height: 100vh;
 	margin: 0 auto;
-	/*background-attachment:fixed;
+	background-attachment:fixed;
 	-o-background-size: cover;
 	-moz-background-size: cover;
-	-webkit-background-size:cover;*/
+	-webkit-background-size:cover;
 }
 
 .header-content h4{
@@ -183,7 +195,10 @@ SECTION: ABOUT
 }
 
 #about p {
-	justify-content: justify;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: justify;
 	margin: 20px auto 30px;
 	font-size: 1.25em;
 	line-height: 30px;
@@ -289,13 +304,28 @@ SECTION: FIND ME/ CANTACT ME
 #contact ul{
 	max-width: 100%;
 	/*margin: 20px auto;*/
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	text-align: ceter;
 	padding: 0;
-	flex-wrap: nowrap;
+	-webkit-flex-wrap: nowrap;
+	    -ms-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
 }
 
 #contact ul a{
@@ -438,8 +468,9 @@ SECTION: ANIMATIONS
   background-color: #E42829;
   height: 4px;
   -webkit-transform: translateY(4px);
-  transform: translateY(4px);
-  -webkit-transition-property: transform;
+  -ms-transform: translateY(4px);
+      transform: translateY(4px);
+  -webkit-transition-property: -webkit-transform;
   transition-property: transform;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
@@ -449,7 +480,8 @@ SECTION: ANIMATIONS
 
 .hvr-underline-reveal:hover:before, .hvr-underline-reveal:focus:before, .hvr-underline-reveal:active:before {
   -webkit-transform: translateY(0);
-  transform: translateY(0);
+  -ms-transform: translateY(0);
+      transform: translateY(0);
 }
 
 /*FIND ME ANIMATIONS*/
@@ -472,11 +504,25 @@ SECTION: ANIMATIONS
 	margin: 20px auto;
 	text-align: center;
 	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-content: center;
+	    -ms-flex-line-pack: center;
+	        align-content: center;
 
 }
 
@@ -555,14 +601,14 @@ SECTION: ANIMATIONS
 	right:9px;
 	background-color: #fff;
 	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	    transform: rotate(45deg);
 }
 
 .og-close::after {
 	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	    transform: rotate(-45deg);
 }
 
 .og-close:hover::before,
@@ -648,6 +694,5 @@ SECTION: ANIMATIONS
 	left: 50%;
 	margin: -25px 0 0 -25px;
 	-webkit-animation: loader 0.5s infinite ease-in-out both;
-	-moz-animation: loader 0.5s infinite ease-in-out both;
 	animation: loader 0.5s infinite ease-in-out both;
 }
