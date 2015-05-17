@@ -77,12 +77,12 @@ NAVIGATION
 
 nav ul{
 	padding: 0;
+	height: 100vh;
 	margin-left: 10%;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	height: 100vh;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
