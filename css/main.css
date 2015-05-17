@@ -78,26 +78,15 @@ NAVIGATION
 nav ul{
 	padding: 0;
 	margin-left: 10%;
-	display:-webkit-box;
-	display:-webkit-flex;
-	display:-ms-flexbox;
-	display:flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
 	height: 100vh;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-align-content: center;
-	    -ms-flex-line-pack: center;
-	        align-content: center;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
 }
 
 nav h3{
@@ -216,7 +205,7 @@ SECTION: MY WORK/PORTFOLIO
 ============================================================ */
 #portfolio{
 	margin: 50px auto 0;
-	width: 100%;
+	width: 95%;
 	text-align: center;
 	background-color: #282828;
 	height: 100%;
@@ -303,29 +292,18 @@ SECTION: FIND ME/ CANTACT ME
 
 #contact ul{
 	max-width: 100%;
-	margin: 20px auto;
+	/*margin: 20px auto;*/
 	display: -webkit-box;
-	display: -webkit-flex;
+	display: -moz-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	text-align: ceter;
 	padding: 0;
-	-webkit-flex-wrap: nowrap;
-	    -ms-flex-wrap: nowrap;
-	        flex-wrap: nowrap;
+	flex-wrap: nowrap;
 }
 
 #contact ul a{
@@ -503,24 +481,15 @@ SECTION: ANIMATIONS
 	text-align: center;
 	width: 100%;
 	display: -webkit-box;
-	display: -webkit-flex;
+	display: -moz-box;
 	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-webkit-flex-wrap: wrap;
-	    -ms-flex-wrap: wrap;
-	        flex-wrap: wrap;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-align-content: center;
-	    -ms-flex-line-pack: center;
-	        align-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+
 }
 
 .og-grid li > a,
