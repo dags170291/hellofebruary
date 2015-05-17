@@ -573,11 +573,11 @@
     	margin: 30px 0 0;
     	outline: none;
     }
-    .cd-testimonials-all .cd-testimonials-item {
+    /*.cd-testimonials-all .cd-testimonials-item {
       margin-bottom:;
       width: 100%;
       opacity: 0;
-    }
+    }*/
     .close-btn::before, .close-btn::after {
       /* close icon in css */
       top: 15px;
@@ -588,9 +588,9 @@
         width: 100%;
     }
 
-    .cd-testimonials-all p{
+    /*.cd-testimonials-all p{
         margin-top: 10px;
-    }
+    }*/
     .cd-testimonials-all .cd-author {
       /*text-align: left;*/
       margin-left: 50px;
