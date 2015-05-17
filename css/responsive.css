@@ -316,6 +316,7 @@
         /*padding-top: 40px;*/
         /*height: 40px;*/
         font-family:'cutive mono', monospace;
+        opacity: 0.5;
     }
 
 	#navigation{
