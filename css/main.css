@@ -65,7 +65,7 @@ NAVIGATION
 	width: 20%;
 	height:100%;
 	position: fixed;
-	background-color: #282828;
+	background-color: #fff;
 
 }
 
@@ -131,7 +131,7 @@ HEADER CONTENT
 }
 
 .header-content{
-	background-image: url("../images/bridge.jpg");
+	background-image: url("../images/type.jpg");
 	/*background-size:cover;*/
 	background-repeat: no-repeat;
 	background-position: center center;
