@@ -64,7 +64,7 @@
 	}
 
 	#about p{
-		width: 80%;
+		width: 90%;
 		font-size:1.25em;
 		line-height: 30px;
 	}
@@ -424,15 +424,16 @@
 		margin: 0;
 	}
 	.profile-photo{
-		max-width: 275px;
+		max-width: 200px;
 		margin-top: 10%;
         border-radius: 100%;
 	}
 
 	#about p{
-		width: 80%;
-		font-size:1em;
-		line-height: 30px;
+		width: 85%;
+		font-size:0.85em;
+		line-height: 25px;
+        text-align: left;
 	}
 
 
