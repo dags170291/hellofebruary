@@ -4,7 +4,7 @@ GLOBAL STYLES
 html,body{
 	margin:0;
 	padding: 0;
-	font-family: 'Varela Round', sans-serif;
+	font-family: 'roboto', sans-serif;
 }
 
 a:hover, a:active, a:focus {
@@ -48,7 +48,7 @@ h2{
 	/*display: none;*/
 }
 .highlight{
-	/*font-family:'Cutive Mono',monospace;*/
+	/*font-family:'RobotoMono',monospace;*/
 	/*letter-spacing: 5px;*/
 	color: #e74c3c;
 	font-style: normal;
@@ -98,7 +98,7 @@ nav ul{
 }
 
 nav h3{
-	font-family: 'cutive mono',sans-serif;
+	font-family: 'Roboto mono',sans-serif;
 	color: #fff;
 	font-size: 1.5em;
 	opacity: 0.5;
@@ -107,7 +107,7 @@ nav h3{
 nav ul li{
 	list-style: none;
 	line-height: 50px;
-	font-family: 'Cutive Mono', monospace;
+	font-family: 'Roboto Mono', monospace;
 }
 
 nav ul a li{
@@ -206,7 +206,7 @@ SECTION: ABOUT
 	color: #282828;
 	width: 70%;
 	background-size: 50px 100px;
-	font-family: 'varela round', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	/*font-style: italic;*/
 }
 
@@ -271,7 +271,7 @@ SECTION: SHOUT-OUTS
 	color: #282828;
 	text-align: right;
 	width: 90%;
-	font-family:'Cutive Mono', monospace;
+	font-family:'Roboto Mono', monospace;
 	font-size: 0.85em;
 }
 
@@ -299,7 +299,7 @@ SECTION: FIND ME/ CANTACT ME
 	text-align: left;
 	font-style: italic;
 	opacity: 0.3;
-	font-family: 'cutive mono', sans-serif;
+	font-family: 'Roboto mono', sans-serif;
 }
 
 #contact ul{
@@ -360,7 +360,7 @@ SECTION: FIND ME/ CANTACT ME
 	margin: 0 auto;
 	color:#fff;
 	opacity: 0.2;
-	font-family: 'Cutive Mono',monospace;
+	font-family: 'Roboto Mono',monospace;
 	letter-spacing: 10px;
 	line-height: 40px;
 }
@@ -377,7 +377,7 @@ SECTION: FIND ME/ CANTACT ME
 	text-decoration:none;
 	padding: 25px 30px;
 	color: #fff;
-	font-family: 'Cutive Mono',monospace;
+	font-family: 'Roboto Mono',monospace;
 	letter-spacing: 3px;
 	font-size: 1em;
 	/*opacity: 0.6;*/
@@ -667,7 +667,7 @@ SECTION: ANIMATIONS
 	display: inline-block;
 	margin: 30px 0 0;
 	outline: none;
-	font-family: 'Cutive Mono', monospace;
+	font-family: 'Roboto Mono', monospace;
 	opacity: 0.8;
 	text-decoration: none;
 }
